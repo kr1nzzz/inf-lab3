@@ -20,10 +20,11 @@ for i, haiku in enumerate(tests, start=1):
     if len(sp) != 3:
         print("Не хайку. Должно быть 3 строки.\n")
     else:
-        glbuk = r"[аеёиоуыэюяAEЁIOUYaeiouy]"
+        glbuk = r"[аеёиоуыэюяАЕЁИОУЫЭЮЯ]"
         kolbuk = [len(re.findall(glbuk, line)) for line in sp]
         
         if kolbuk == [5, 7, 5]:
             print("Хайку!\n")
         else:
             print("Не хайку.\n")
+
