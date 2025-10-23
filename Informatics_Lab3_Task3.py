@@ -1,3 +1,7 @@
+# Author = Kozlov Timofey Alekseevich
+# Group = P3111
+# Date = 23.10.2025
+
 import re
 
 number = r"(?:\d{1,2})"              
@@ -25,3 +29,4 @@ tests = [
 
 for test in tests:
     print(f"{test}: {valid_cron(test)}")
+
