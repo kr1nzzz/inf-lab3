@@ -1,3 +1,7 @@
+# Author = Kozlov Timofey Alekseevich
+# Group = P3111
+# Date = 23.10.2025
+
 import re
 
 def slovechki(text):
@@ -26,3 +30,4 @@ for i, test in enumerate(tests, 1):
     result = slovechki(test)
     print(f"Тест {i}: {test}")
     print(f"Найденные слова: {result}\n")
+
